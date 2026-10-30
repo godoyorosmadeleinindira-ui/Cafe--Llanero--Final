@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Café Llanero: café, panadería y sabores con tradición llanera en Pore, Casanare.">
+  <title>Café Llanero | Sabor de nuestra tierra</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+  <header class="encabezado">
+    <nav class="navbar contenedor" aria-label="Navegación principal">
+      <a class="logo" href="#inicio">☕ Café Llanero</a>
+      <button class="boton-menu" id="boton-menu" aria-label="Abrir menú" aria-expanded="false">☰</button>
+      <ul class="nav-lista" id="nav-lista">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#nosotros">Nosotros</a></li>
+        <li><a href="#menu">Menú</a></li>
+        <li><a href="#galeria">Galería</a></li>
+        <li><a href="#registro">Registro</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="contenedor hero-contenido">
+        <div>
+          <p class="etiqueta">Tradición, aroma y sabor</p>
+          <h1>El sabor de los Llanos en cada taza</h1>
+          <p>Un espacio acogedor para disfrutar café, panadería y momentos especiales con el sabor de nuestra tierra.</p>
+          <a class="boton" href="#menu">Conoce nuestro menú</a>
+        </div>
+        <div class="hero-tarjeta">
+          <div class="hero-icono">☕</div>
+          <h2>Café de la casa</h2>
+          <p>Preparado con dedicación para comenzar bien el día.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="seccion" id="nosotros">
+      <div class="contenedor dos-columnas">
+        <div>
+          <p class="etiqueta">Sobre nosotros</p>
+          <h2>Una cafetería con corazón llanero</h2>
+          <p>En Café Llanero queremos ofrecer un lugar donde las personas puedan compartir, conversar y disfrutar productos frescos en un ambiente cálido y familiar.</p>
+          <p>Nuestro propósito es brindar atención amable y sabores que representen la calidez de nuestra tierra.</p>
+        </div>
+        <aside class="info-box">
+          <h3>¿Por qué visitarnos?</h3>
+          <ul>
+            <li>Productos preparados con dedicación.</li>
+            <li>Ambiente familiar y acogedor.</li>
+            <li>Atención cercana y amable.</li>
+            <li>Sabores inspirados en los Llanos.</li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <section class="seccion fondo-claro" id="menu">
+      <div class="contenedor">
+        <p class="etiqueta centrado">Nuestros productos</p>
+        <h2 class="centrado">Menú de Café Llanero</h2>
+        <div class="tarjetas-menu">
+          <article class="producto"><div class="producto-icono">☕</div><h3>Café tradicional</h3><p>Café caliente recién preparado.</p><strong>$4.000</strong></article>
+          <article class="producto"><div class="producto-icono">🥐</div><h3>Pan de la casa</h3><p>Pan fresco para acompañar tu bebida.</p><strong>$3.500</strong></article>
+          <article class="producto"><div class="producto-icono">🍳</div><h3>Desayuno llanero</h3><p>Una opción completa para comenzar el día.</p><strong>$15.000</strong></article>
+          <article class="producto"><div class="producto-icono">🧃</div><h3>Jugo natural</h3><p>Bebida refrescante preparada al momento.</p><strong>$6.000</strong></article>
+          <article class="producto"><div class="producto-icono">🍰</div><h3>Postre casero</h3><p>Un dulce especial para compartir.</p><strong>$7.000</strong></article>
+          <article class="producto"><div class="producto-icono">🥪</div><h3>Sándwich especial</h3><p>Una opción deliciosa y rápida.</p><strong>$12.000</strong></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="seccion" id="galeria">
+      <div class="contenedor">
+        <p class="etiqueta centrado">Conoce nuestro espacio</p>
+        <h2 class="centrado">Galería</h2>
+        <div class="galeria">
+          <figure class="galeria-item">
+            <img src="img/cafe.svg" alt="Ilustración de una taza de café recién preparado">
+            <figcaption>Café recién preparado</figcaption>
+          </figure>
+          <figure class="galeria-item">
+            <img src="img/pan.svg" alt="Ilustración de panadería artesanal">
+            <figcaption>Panadería artesanal</figcaption>
+          </figure>
+          <figure class="galeria-item">
+            <img src="img/ambiente.svg" alt="Ilustración del ambiente acogedor de la cafetería">
+            <figcaption>Ambiente acogedor</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="seccion" id="registro">
+      <div class="contenedor dos-columnas registro-contenido">
+        <div>
+          <p class="etiqueta">Únete a nuestra familia</p>
+          <h2>Regístrate en Café Llanero</h2>
+          <p>Crea tu registro de cliente para que podamos brindarte una atención más cercana. Completa tus datos y confirma tu contraseña.</p>
+          <div class="info-box registro-nota">
+            <h3>¿Por qué registrarte?</h3>
+            <ul>
+              <li>Dejar tus datos de contacto.</li>
+              <li>Facilitar futuras solicitudes y consultas.</li>
+              <li>Formar parte de la comunidad Café Llanero.</li>
+            </ul>
+          </div>
+        </div>
+        <form class="formulario" id="formulario-registro" novalidate>
+          <h3>Registro de clientes</h3>
+          <label for="registro-nombre">Nombre completo *</label>
+          <input type="text" id="registro-nombre" name="nombre" autocomplete="name" required placeholder="Escribe tus nombres y apellidos">
+          <small class="error" id="error-registro-nombre"></small>
+
+          <label for="registro-correo">Correo electrónico *</label>
+          <input type="email" id="registro-correo" name="correo" autocomplete="email" required placeholder="ejemplo@correo.com">
+          <small class="error" id="error-registro-correo"></small>
+
+          <label for="registro-celular">Número de celular *</label>
+          <input type="tel" id="registro-celular" name="celular" autocomplete="tel" required inputmode="tel" placeholder="Tu número de contacto">
+          <small class="error" id="error-registro-celular"></small>
+
+          <label for="registro-contrasena">Contraseña *</label>
+          <input type="password" id="registro-contrasena" name="contrasena" autocomplete="new-password" required minlength="8" placeholder="Mínimo 8 caracteres">
+          <small class="error" id="error-registro-contrasena"></small>
+
+          <label for="registro-confirmar">Confirmar contraseña *</label>
+          <input type="password" id="registro-confirmar" name="confirmar" autocomplete="new-password" required minlength="8" placeholder="Escribe nuevamente la contraseña">
+          <small class="error" id="error-registro-confirmar"></small>
+
+          <button class="boton" type="submit">Registrarme</button>
+          <p id="registro-exito" class="mensaje-exito" role="status" aria-live="polite"></p>
+          <p class="nota-formulario">* Campos obligatorios. Demostración académica: no ingreses contraseñas reales.</p>
+        </form>
+      </div>
+    </section>
+
+    <section class="seccion fondo-claro" id="contacto">
+      <div class="contenedor dos-columnas">
+        <div>
+          <p class="etiqueta">Contáctanos</p>
+          <h2>Queremos atenderte</h2>
+          <div class="datos-contacto">
+            <p><strong>Propietaria:</strong> Madelein Godoy</p>
+            <p><strong>Dirección:</strong> Carrera 13 # 9-57, barrio Centauros, Pore, Casanare</p>
+            <p><strong>Celular:</strong> 314 465 5541</p>
+            <p><strong>Horario:</strong> Lunes a sábado, 7:00 a. m. a 7:00 p. m.</p>
+          </div>
+          <a class="boton whatsapp" href="https://wa.me/573144655541" target="_blank" rel="noopener">Escríbenos por WhatsApp</a>
+        </div>
+
+        <form class="formulario" id="formulario-contacto" novalidate>
+          <h3>Envíanos un mensaje</h3>
+          <label for="nombre">Nombre completo</label>
+          <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre">
+          <small class="error" id="error-nombre"></small>
+
+          <label for="correo">Correo electrónico</label>
+          <input type="email" id="correo" name="correo" placeholder="ejemplo@correo.com">
+          <small class="error" id="error-correo"></small>
+
+          <label for="mensaje">Mensaje</label>
+          <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje"></textarea>
+          <small class="error" id="error-mensaje"></small>
+
+          <button class="boton" type="submit">Enviar mensaje</button>
+          <p id="mensaje-exito" class="mensaje-exito" role="status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="contenedor footer-contenido">
+      <p>© 2026 Café Llanero. Todos los derechos reservados.</p>
+      <p>Hecho con sabor y tradición llanera.</p>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
